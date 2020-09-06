@@ -15,6 +15,8 @@ body{
   margin: 0;
 }
 
+
+
 .nav{
   display: flex;
   list-style: none;
@@ -260,3 +262,260 @@ body{
   }
 }
 
+.portfolio{
+padding: 123px 0 160px 0;
+  &-wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  &__title{
+    font-size: 36px;
+    font-weight: 400;
+    color: $dark;
+    text-align: center;
+  }
+  &__text{
+    font-size: 16px;
+    color: $gray;
+    font-weight: 400;
+    text-align: center;
+  }
+  &__items{
+    display: grid;
+    grid-template: repeat(7, 88px)/1fr 1fr 1fr;
+    grid-gap: 40px;
+    padding-top: 83px;
+  }
+  &__item{
+    &-1{
+      grid-column: 1/2;
+      grid-row: 1/4;
+    }
+    &-2{
+      grid-column: 2/3;
+      grid-row: 1/5;
+    }
+    &-3{
+      grid-column: 3/4;
+      grid-row: 1/4;
+    }
+    &-4{
+      grid-column: 1/2;
+      grid-row: 4/8;
+    }
+    &-5{
+      grid-column: 2/3;
+      grid-row: 5/8;
+    }
+    &-6{
+      grid-column: 3/4;
+      grid-row: 4/8;
+    }
+  }
+  &__item-thumb{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    img{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.offer{
+  background-color: $dark;
+  text-align: center;
+  padding: 100px 0;
+  &-wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  &__title-text{
+    font-size: 22px;
+    font-weight: 400;
+    color: $light;
+    
+  }
+  &__title{
+    font-size: 48px;
+    font-weight: 400;
+    color: $light;
+  }
+  &__btn{
+    font-size: 16px;
+    font-weight: 400;
+    background-color: $light;
+    color: $dark;
+    padding: 10px 30px;
+    text-decoration: none;
+  }
+}
+
+.testimonials{
+  margin-top: 130px;
+  margin-bottom: 185px;
+  &-wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  &__title{
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+  }
+  &__title-text{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+  }
+  &__item{
+    margin-top: 65px;
+    margin-right: 80px;
+  }
+  &__item-wrapper{
+    display: flex;
+  }
+  &__item-contact{
+    display: flex;
+  }
+  &__item-contact__avatar{
+    padding-right: 15px;
+  }
+  &__item-contact__client-name{
+    font-size: 22px;
+    padding-top: 15px;
+  }
+  &__item-contact__client-position{
+    font-size: 12px;
+    padding-top: 5px;
+    color: $gray;
+  }
+  &__item-text{
+    color: $gray;
+    font-size: 18px;
+    font-style: italic;
+    max-width: 480px;
+    padding-top: 70px;
+    padding-left: 20px;
+  }
+}
+
+.advantages{
+  padding-top: 140px;
+  padding-bottom: 180px;
+  background-color: $light;
+  &-wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  &__item{
+    width: 150px;
+  }
+  &__item-img{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 100%;
+    background-color: $dark;
+    margin-bottom: 20px;
+  }
+  &__item-num{
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 15px;
+  }
+  &__item-text{
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+.form{
+  padding-top: 122px;
+  padding-bottom: 130px;
+  text-align: center;
+  &-wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  &-title{
+    font-size: 36px;
+  }
+  &-text{
+    font-size: 16px;
+    color: $gray;
+    padding-top: 30px;
+  }
+  &-send{
+    max-width: 750px;
+    margin: 45px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  &__input-name,
+  &__input-email,
+  &__input-message{
+    border:none;
+    border-bottom: 1px solid $light;
+    font-size: 14px;
+    padding: 17px 25px;
+    text-align: center;
+    margin-bottom: 15px;
+    resize: none;
+    font-family: sans-serif;
+    transition: .3s;
+    &:focus{
+      outline: none;
+      border-bottom: 1px solid $dark;
+    }
+  }
+  &__input-btn{
+    margin-top: 55px;
+    padding: 25px 0;
+    border: none;
+    background-color: $dark;
+    color: #fff;
+  }
+}
+
+.footer{
+  background-color: $dark;
+  padding: 65px 0;
+  &-wrapper{
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  }
+  &__social{
+    display: flex;
+    list-style: none;
+    
+  }
+  &__social-item{
+    padding: 10px;
+    font-size: 20px;
+    a{
+      color: #fff;
+    }
+  }
+}
